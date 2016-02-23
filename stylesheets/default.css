@@ -1,0 +1,104 @@
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  padding:20px;
+}
+
+nav li {
+  display: inline;
+  font-family: PT Sans Narrow, sans-serif;
+  font-size: 100%;
+}
+
+nav li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+}
+
+nav li img {
+  width:25px;
+  float: right;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.jumbotron img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+}
+
+#christyn {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.normal-header {
+  font-family: 'Satisfy';
+  text-align: center;
+  padding-top: 50px;
+  font-size:250%;
+}
+
+.welcome {
+  font-family: PT Sans Narrow, sans-serif;
+  font-size: 90%;
+  text-align: center;
+  padding-right: 270px;
+  padding-left: 270px;
+}
+
+main button {
+  background-color: black;
+  font-size: 90%;
+  border: none;
+  color: white;
+  padding: 20px 32px;
+  width:200px;
+}
+
+main button a {
+  text-decoration: none;
+  font-family: PT Sans Narrow, sans-serif;
+  color: white;
+}
+
+.buttonholder {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  padding:20px;
+}
+
+footer li {
+  display: inline;
+  font-size: 90%;
+  font-family: PT Sans Narrow, sans-serif;
+  font-size: 100%;
+  color: white;
+}
+
+footer li a {
+  color: white;
+  font-family: PT Sans Narrow, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.bloglist {
+  font-size: 90%;
+  font-family: PT Sans Narrow, sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+}
