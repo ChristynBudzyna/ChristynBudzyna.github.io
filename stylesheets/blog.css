@@ -1,0 +1,82 @@
+.blog-header {
+  font-family: Satisfy;
+  padding-top: 50px;
+  font-size:250%;
+  text-align:center;
+}
+
+.blog-h2 {
+  font-family:Satisfy;
+  font-size:200%;
+  text-align:center;
+}
+
+.date {
+  font-family: PT Sans Narrow, sans-serif;
+  font-size: 100%;
+}
+
+.blog-text {
+  font-family: PT Sans Narrow, sans-serif;
+  font-size: 90%;
+}
+
+.blog-list {
+  font-family: PT Sans Narrow, sans-serif;
+  font-size: 90%;
+}
+
+#caption {
+  text-align: center;
+  font-family: PT Sans Narrow, sans-serif;
+  font-size: 90%;
+}
+
+.blog-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid black;
+}
+
+#column-left {
+  margin-top: 0;
+  padding-top: 0;
+  float: left;
+  width: 67%;
+  background:#fff;
+  margin-right: 3em;
+  margin-left: 2em;
+  padding-bottom: 20px;
+  padding-right: 1em;
+}
+
+#column-right {
+  margin-top: 0;
+  padding-top: 50px;
+}
+
+.right-nav-h2 {
+  font-family:Satisfy;
+  font-size:200%;
+}
+
+.right-nav{
+  font-family: PT Sans Narrow, sans-serif;
+  font-size: 90%;
+}
+
+.right-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#christyn {
+  width:10%;
+  border-radius:50%;
+  text-align: center;
+}
+
+#picture-holder {
+  text-align: center;
+}
