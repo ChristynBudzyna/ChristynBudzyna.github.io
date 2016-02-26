@@ -80,3 +80,20 @@
 #picture-holder {
   text-align: center;
 }
+
+.csspics {
+  border: 2px solid black;
+  height:30em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+#bob {
+  border: 2px solid black;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
