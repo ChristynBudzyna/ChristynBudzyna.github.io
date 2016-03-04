@@ -36,10 +36,19 @@ nav li img {
   width: 20%;
 }
 
+caption {
+  font-family: 'Satisfy';
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom:30px;
+  font-size:250%;
+}
+
 .normal-header {
   font-family: 'Satisfy';
   text-align: center;
   padding-top: 50px;
+  padding-bottom:30px;
   font-size:250%;
 }
 
@@ -47,8 +56,8 @@ nav li img {
   font-family: PT Sans Narrow, sans-serif;
   font-size: 90%;
   text-align: center;
-  padding-right: 270px;
-  padding-left: 270px;
+  padding-right: 25%;
+  padding-left: 25%;
 }
 
 main button {
