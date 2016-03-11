@@ -26,19 +26,32 @@
 </ul>
 </nav>
 
-<section class="jumbotron">
-  <img src="Imgs/jumbotron2.jpg">
-</section>
+
 
 <main>
-<h1 class= "normal-header">So glad you're here!</h1>
-<p class="welcome"> Thanks for stopping by my little corner of the internet.  I am a NYC based web developer, launching my career at Dev Bootcamp. Here you can find some information about me, read my blog and resume, and check out some of my latest projects.  </p>
+<h1 class= "normal-header">Drop me a line!</h1>
+<p class="welcome"> Feel free to shoot me a message.  I'll get back to you as soon as possible. (This form is under construction) </p>
 <br>
 
-<div class = "buttonholder">
-<button type="button"><a href="http://christynbudzyna.github.io/blog/">My Coding Blog</a></button>
-<button type="button"><a href="#">My Projects</a></button>
-</div>
+<form action="mailto:cbudzyna@gmail.com" enctype="text/plain" method="post" class="contact">
+    <div class = "form-object">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" />
+    </div>
+    <div class = "form-object">
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_email"/>
+    </div>
+    <div class = "form-object">
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message"></textarea>
+    </div>
+
+    <div class="buttonholder">
+        <button type="submit" id="button">Send your message</button>
+    </div>
+</form>
+
 
 </main>
 
