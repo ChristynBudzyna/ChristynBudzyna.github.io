@@ -143,3 +143,37 @@ input, textarea {
 code {
 font-family: 'Source Code Pro', ;
 }
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.inner-container {
+  display:flex
+  flex-dreiction: column;
+}
+
+.about_p {
+  font-family: PT Sans Narrow, sans-serif;
+  padding-left: 50px;
+}
+
+.about_picture {
+  border-radius: 50%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.about-header {
+  font-family: 'Satisfy';
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom:10px;
+  font-size:250%;
+}
+
+
