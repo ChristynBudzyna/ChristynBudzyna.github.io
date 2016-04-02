@@ -80,6 +80,9 @@ main button a {
   text-align: center;
   padding-bottom: 50px;
 }
+footer {
+  padding-top:50px;
+}
 
 footer ul {
   list-style-type: none;
