@@ -119,3 +119,20 @@ li {
   align-self: stretch;
 }
 
+#blogpost-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content:flex-start;
+}
+
+.blog-item {
+  font-family: PT Sans Narrow, sans-serif;
+  display: flex;
+  flex: 1 1 200px;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  text-align: center;
+}
+

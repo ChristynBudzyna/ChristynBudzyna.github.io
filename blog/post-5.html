@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Enumerable Methods in Ruby
+  </title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ <nav>
+      <ul>
+         <li><a href="../index.html">Home</a></li>
+        <li><a href="../about-me.html">About Me</a></li>
+        <li><a href="../blog/index.html">Blog</a></li>
+        <li><a href="../projects/index.html">Projects</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="https://www.facebook.com/cbudzyna"><img src="../Imgs/facebook.png"></a></li>
+        <li><a href="https://twitter.com/ChristynBudzyna"><img src="../Imgs/twitter.png"></a></li>
+        <li><a href="https://www.linkedin.com/in/christyn-budzyna-27685753?trk=hp-identity-name"><img src="../Imgs/linkedin.png"></a></li>
+        <li><a href="https://github.com/ChristynBudzyna"><img src="../Imgs/github.png"></a></li>
+      </ul>
+    </nav>
+
+  <main id = "column-left">
+    <h1 class = "blog-header">Creating Classes in Ruby</h1>
+      <div class = "date">3/18/16</div>
+      <p class="blog-text">
+        Happy Friday, everyone! This week's focus at Dev Bootcamp was about understanding and creating classes in Ruby. Classes are a great way to organize your information. It's a way to treat your data like a "real" object: You can assign it different attributes and pass specific methods to it. The best way to understand it is to take a look at the code. Here's an example of a Food class I created.
+      </p>
+      <img src ="../Imgs/class.png">
+      <p class="blog-text">
+        First, I defined a class called Food - you use a capitalized letter in Ruby to define classes.  In the "initialize" method, I went ahead and gave food 3 attributes: name, type, and color.  Note the attr_accessor, writer, and reader methods just above that.  These are shortcut methods- attr_accessor gives the user the ability to re-write and read the attribute.  The writer is just for writing, and the reader is just for reading. You want to be very specific about the type of permission to give the user. Here, I gave the user permission to read and change the name, only change but not read the color, and only read but not change the type.
+      </p>
+    <h2 class = "blog-h2">Instance Variables and Instance Methods</h2>
+      <p class="blog-text">
+        One of the most useful features of classes is the ability to define instance variables.  These are variables that can only be used within the class; they cannot be used outside of the class.  You define an instance variable with the @ sign.  You can see above that @name, @type, and @color are all instance variables.  What's awesome about these is that you can use these instance variables in all of the methods in your classes.  Note that witin both the cook method and the eat method, I use the @name attribute!
+      </p>
+      <p class="blog-text">
+        Within classes, you define methods that should be applied to the instances of that class - in this case, initialize, cook and eat. In my initialize method, I defined three arguments- name, type and color.  When I created a new instance of the class (chicken=Food.new), I added the three attributes for chicken.  Then, I called the cook and eat methods.  Here's what was printed to the console when I ran the program:
+      </p>
+      <img src ="../Imgs/classrun.png">
+      <p class="blog-text">
+        I really enjoyed learning more about classes this week.  They're a great way to make your code define real world items and their associated actions. See you next week when we delve into the world of Javascript!
+      </p>
+
+  <footer>
+    <ul>
+      <li>Christyn Budzyna 2016</li>
+    </ul>
+  </footer>
+</main>
+
+
+  <aside id="column-right">
+    <div id="picture-holder"><img src="../Imgs/christyn.jpg" id="christyn"></div>
+    <p class="right-nav">
+      Christyn Budzyna is a web developer in training, currently attending Dev Bootcamp. She is an avid maker-of-all-the-things; in addition to coding, she also writes musicals and knits awesome sweaters.
+    </p>
+    <h2 class="right-nav-h2">Recent Posts</h2>
+      <ul>
+        <li class="right-nav"><a href="#">Blog Post #1</a></li>
+        <li class="right-nav"><a href="#">Blog Post #2</a></li>
+        <li class="right-nav"><a href="#">Blog Post #3</a></li>
+      </ul>
+    <h2 class="right-nav-h2">Related Posts</h2>
+      <ul>
+        <li class="right-nav"><a href="#">Blog Post #1</a></li>
+        <li class="right-nav"><a href="#">Blog Post #2</a></li>
+        <li class="right-nav"><a href="#">Blog Post #3</a></li>
+      </ul>
+    </aside>
+
+</body>
+</html>
+
+ -->

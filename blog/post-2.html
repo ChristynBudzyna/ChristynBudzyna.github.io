@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Displays in CSS
+  </title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+   <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+   <meta charset="UTF-8">
+</head>
+
+<body>
+  <nav>
+      <ul>
+         <li><a href="../index.html">Home</a></li>
+        <li><a href="../about-me.html">About Me</a></li>
+        <li><a href="../blog/index.html">Blog</a></li>
+        <li><a href="../projects/index.html">Projects</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="https://www.facebook.com/cbudzyna"><img src="../Imgs/facebook.png"></a></li>
+        <li><a href="https://twitter.com/ChristynBudzyna"><img src="../Imgs/twitter.png"></a></li>
+        <li><a href="https://www.linkedin.com/in/christyn-budzyna-27685753?trk=hp-identity-name"><img src="../Imgs/linkedin.png"></a></li>
+        <li><a href="https://github.com/ChristynBudzyna"><img src="../Imgs/github.png"></a></li>
+      </ul>
+    </nav>
+
+  <main id = "column-left">
+     <h1 class = "blog-header">Positioning in CSS</h1>
+         <div class = "date">2/26/16</div>
+         <p class="blog-text">
+            Hi folks!  The past couple of weeks at Dev Bootcamp have been all about HTML and CSS.  I have some experience using both, but I was able to learn and explore some new concepts.  For those of you who are new to coding, HTML is the language you use to build the blocks of a website, and CSS is the language you use to style it.  Last week, I built the bones of this website in HTML, and this past Monday, I styled it in CSS. I find CSS a little more fun to write than HTML, because it exercises the creative side of my brain a little more.   Most of CSS is fairly straightforward to me, but positioning elements on a page is the concept that I have found to be the trickiest. I'm going to break down positioning in CSS for you, so we can both get a better grasp on it!
+        </p>
+        <img src="http://media.giphy.com/media/3Fi5jZkZdJA4M/giphy.gif" id="bob">
+        <p id= "caption">Listen to Bob Ross.</p>
+    <h2 class = "blog-h2">Position Property</h2>
+        <p class="blog-text">
+          The position property specifies the type of positioning method an element will use. There are four different types of positions that an element can have: static, relative, absolute, and fixed.  Let's say we have an image tag that holds a picture of my dog, Dottie.  I am assigning this image tag with an id of "dog" so I can select it in css with #dog.</p>
+        <p>
+          <code>&lt;img src="imgs/dottie.png" id="dog"&gt;</code>
+        </p>
+    <h2 class = "blog-h2">Static Positioning</h2>
+        <p class="blog-text">
+          Static positioning is the default position in HTML.  Because there are no other elements on this page, Dottie stays in the top left hand corner of the screen.</p>
+        <p class="blog-text">
+          What this looks like in CSS:
+        </p>
+          <code>
+            #dog { <br>
+                position: static; <br>
+            }<br>
+          </code>
+        <img src="../Imgs/static.png" class="csspics">
+        <p class="blog-text">
+          Dottie ain't goin' nowhere in static positioning.
+        </p>
+
+    <h2 class = "blog-h2">Relative Positioning</h2>
+       <p class="blog-text">
+        In relative positioning, the image moves relative of where it would have been in static positioning.  Note: this is NOT relative to the other elements on the screen, it is only relative to where it would be.</p>
+      <p class="blog-text">What this looks like in CSS:</p>
+        <code>
+          #dog { <br>
+              position: relative; <br>
+              top: 100px; <br>
+          } <br>
+        </code>
+      <img src="../Imgs/relative.png" class="csspics">
+      <p class="blog-text">
+        This moves Dottie 100 pixels down from the top of where she would have been in static positioning.
+      </p>
+  <h2 class = "blog-h2">Absolute Positioning</h2>
+      <p class="blog-text">
+        In absolute positioning, there are two possible options.  If the element is the only thing on the page with absolute positioning, then it is positioned in terms of the entire page.  If there are more than one elements without a static position, the element is positioned in relation to the first parent element that doesn't have position:static.
+      </p>
+      <p class="blog-text">
+       What this looks like in CSS:</p>
+        <code>
+          #dog {<br>
+              position:absolute;<br>
+              top:100px;<br>
+              right:100px;<br>
+          }
+        </code>
+      <img src="../Imgs/absolute.png" class="csspics">
+      <p class="blog-text">
+        Dottie is positioned 100 pixels from the top of the whole page, and 100 pixels right of the whole page.  If there were other elements not in the static position, she would be positioned in relation to them.
+      </p>
+    <h2 class = "blog-h2">Fixed Positioning</h2>
+      <p class="blog-text">
+        An element in fixed positioning is positioned relative to the viewport (the user's visable area of a web page). It will always stay in the same place even if the page is scrolled.
+      </p>
+      <p class="blog-text">
+       What this looks like in CSS:</p>
+        <code>
+          #dog { <br>
+              position:fixed; <br>
+          } <br>
+        </code>
+      <img src="../Imgs/fixed.png" class="csspics">
+      <p class="blog-text">
+        Dottie stays in the same spot, even though I've scrolled down.
+      </p>
+    <h2 class="blog-h2">See You Next Time!</h2>
+      <p class="blog-text">
+        Hope you enjoyed this week's blog post!  Tune in again for the wonders of Javascript and Ruby!
+      </p>
+  <footer>
+    <ul>
+      <li>Christyn Budzyna 2016</li>
+    </ul>
+  </footer>
+</main>
+
+  <aside id="column-right">
+    <div id="picture-holder"><img src="../Imgs/christyn.jpg" id="christyn"></div>
+    <p class="right-nav">
+      Christyn Budzyna is a web developer in training, currently attending Dev Bootcamp. She is an avid maker-of-all-the-things; in addition to coding, she also writes musicals and knits awesome sweaters.
+    </p>
+    <h2 class="right-nav-h2">Recent Posts</h2>
+      <ul>
+        <li class="right-nav"><a href="#">Blog Post #1</a></li>
+        <li class="right-nav"><a href="#">Blog Post #2</a></li>
+        <li class="right-nav"><a href="#">Blog Post #3</a></li>
+      </ul>
+    <h2 class="right-nav-h2">Related Posts</h2>
+      <ul>
+        <li class="right-nav"><a href="#">Blog Post #1</a></li>
+        <li class="right-nav"><a href="#">Blog Post #2</a></li>
+        <li class="right-nav"><a href="#">Blog Post #3</a></li>
+      </ul>
+    </aside>
+  </body>
+</html>
+
+
+<!-- How was it to wireframe and create an HTML page with a pair?
+It was nice to be able to bounce ideas off of each other and look at different designs together.He brought up ideas that I hadn't thought about before.
+
+Did you find wireframing to be helpful to your development process?
+It's really nice to see everything laid out before going about building it.
+
+What did you and your pair decide made a good wireframe?
+We wanted to keep it clean and simple, without a lot of bells and whistles, and with the focus on the blog post itself.
+What new semantic elements did you learn about (if any)? I learned about adding an id to an aside tag, and about the textarea tag.  -->
