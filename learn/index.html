@@ -93,7 +93,7 @@
                 <div class="col-lg-12 text-center">
                     <h2>About</h2>
                     <hr class="star-primary">
-                    <p>Hi there! My name is <a href="http://www.christyncodes.com">Christyn</a> and I'm a web developer, currently working at <a href="https://www.publictheater.org/">The Public Theater</a>. I love to code and to teach others how to do it too. When I was learning how to code, I noticed that there are not a lot of opportunities for learning web development one-on-one. There are good resources online, but if you get stuck, there's no human to ask questions to. This summer, I'll be offering one-on-one classes in web development to beginners. My goal is to make these classes casual and fun. We'll be able to move at your pace and tailor the session to your skill level.
+                    <p>Hi there! My name is <a href="http://www.christyncodes.com">Christyn</a> and I'm a web developer, currently working at <a href="https://www.publictheater.org/">The Public Theater</a>. I love to code and to teach others how to do it too. When I was learning how to code, I noticed that there are not a lot of opportunities for learning web development one-on-one. There are good resources online, but if you get stuck, there's no human to ask questions to. This summer, I'll be offering one-on-one classes in web development to beginners. These classes will be casual and fun. We'll be able to move at your pace and tailor the session to your skill level.
 
                     <br/>
                 </div>
@@ -234,43 +234,13 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="email">Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="class">Class</label>
-                                <input type="tel" class="form-control" placeholder="Which class are you interested in?" id="phone" required data-validation-required-message="Please choose a class">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="message">Available Dates</label>
-                                <textarea rows="5" class="form-control" placeholder="Please enter 2-3 Mondays or Tuesdays you're available (May 15-August)" id="phone" id="message" required data-validation-required-message="Please enter a few dates you are available."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
-                            </div>
-                        </div>
-                    </form>
+                    <form method="POST" action="http://formspree.io/cbudzyna@gmail.com">
+                  <input type="name" name="name" placeholder="Your name">
+                    <input type="email" name="email" placeholder="Your e-mail">
+                   <input type="class" name="class" placeholder="Which class are you interested in?">
+                  <textarea type="dates" name="dates" placeholder="List 2-3 Mondays or Tuesdays you're available (May-August)"></textarea>
+                  <button type="submit">Send</button>
+                </form>
                 </div>
             </div>
         </div>
