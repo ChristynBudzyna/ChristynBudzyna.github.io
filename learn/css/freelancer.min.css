@@ -27,3 +27,9 @@ input, textarea {
 p, h3, ul {
   margin: 0px 50px;
 }
+
+@media(max-width:600px){
+p, h3, ul {
+  margin: 0px 15px;
+}
+}
