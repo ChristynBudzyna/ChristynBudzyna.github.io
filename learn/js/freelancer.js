@@ -19,7 +19,7 @@
     });
 
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function(){ 
+    $('.navbar-collapse ul li a').click(function(){
             $('.navbar-toggle:visible').click();
     });
 
@@ -30,6 +30,9 @@
         }
     })
 
+    $('.contactMe').click(function(){
+        window.scrollTo(0,document.body.scrollHeight);
+    })
     // Floating label headings for the contact form
     $(function() {
         $("body").on("input propertychange", ".floating-label-form-group", function(e) {
